@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-27 17:57:10 by Eclipse SUMO netedit Version 1.20.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="electricVehicle" vClass="evehicle">
+	<param key="has.battery.device" value="true"/>
+        <!-- param key="device.battery.maximumBatteryCapacity" value="2000"/ -->
+        <!-- param key="device.battery.currentBatteryCapacity" value="2000"/ -->
+        <!-- param key="device.battery.actualBatteryCapacity" value="2000"/ -->
+        <param key="device.battery.efficiency" value="0.95"/>
+    </vType>
+    <!-- Routes -->
+    <route id="r_0" edges="24884043#5 24884043#6"/>
+</routes>
