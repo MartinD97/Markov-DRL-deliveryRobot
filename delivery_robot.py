@@ -9,12 +9,12 @@ from prettytable import PrettyTable
 from ray.rllib.algorithms import ppo
 from gymnasium.spaces import Discrete, Box
 
-### Import SUMO library ###
+### Import SUMO Library ###
 if 'SUMO_HOME' in os.environ: sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
 else: sys.exit("please declare environment variable 'SUMO_HOME'")
 logger = logging.getLogger(__name__)
 
-### Import SUMO maps ###
+### Import SUMO Maps ###
 sumoBinary = os.path.join(os.environ['SUMO_HOME'], 'bin', 'sumo-gui.exe')
 #sumoBinary = os.path.join(os.environ['SUMO_HOME'], 'bin', 'sumo.exe')
 sumoCmd = [sumoBinary, "-c", os.path.join("Bari_1","Bari_1.sumocfg")]
